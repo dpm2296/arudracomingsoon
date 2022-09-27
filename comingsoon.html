@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arudra</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/ionicons.min.css">
+<link rel="stylesheet" href="css/flaticon.css">
+<link rel="stylesheet" href="css/icomoon.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/hover.css">
+</head>
+<style>
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.section1 {
+		background-image: url(images/business-consulting.jpg);
+		width: 100%;
+		height: 65vh;
+		padding-bottom: 30px
+		background-size: cover;
+		color: white;
+		font-size: 80px;
+		font-family: sans-serif;
+		opacity: 0.7;
+		background-color: black;
+
+
+}
+
+.section1 h1{
+
+color: white;
+padding-top: 10%;
+font-size: 75px;
+text-shadow: 1px 1px 2px black, 0 0 25px  black, 0 0 5px black;
+
+}
+
+.section1 h3{
+	color: white;
+      text-shadow: 1px 1px 2px black, 0 0 25px  black, 0 0 5px black;
+}
+
+
+@media(max-width: 500px){
+
+	.section1 {
+		background-image: url(images/business-consulting.jpg);
+		width: 100%;
+		height: 70vh;
+		padding-bottom: 30px
+		background-size: cover;
+		color: white;
+		font-size: 80px;
+		font-family: sans-serif;
+		opacity: 0.7;
+		background-color: black;
+
+
+}
+
+.section1 h1{
+
+color: white;
+padding-top: 50%;
+font-size: 35px;
+text-shadow: 1px 1px 2px black, 0 0 25px  black, 0 0 5px black;
+
+}
+
+.section1 h3{
+	color: white;
+	font-size: 25px;
+      text-shadow: 1px 1px 2px black, 0 0 25px  black, 0 0 5px black;
+}
+
+}
+
+.ftco-footer {
+    font-size: 14px;
+    background: #232323;
+    padding-top: 30px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+  --primary-color: #010712;
+  --secondary-color: #818386;
+  --bg-color: #FCFDFD;
+  --button-color: #3B3636;
+  --h1-color: #3F444C;
+}
+
+[data-theme="dark"] {
+  --primary-color: #FCFDFD;
+  --secondary-color: #818386;
+  --bg-color: #010712;
+  --button-color: #818386;
+  --h1-color: #FCFDFD;
+}
+
+
+
+.contact-container {
+  display: flex;
+  width: 100%;
+  height: 66vh;
+  background: var(--bg-color);
+}
+
+.left-col {
+  width: 100vw;
+  height: 100%;
+  background-image: url("images/01.jpg");
+  /*background-size: cover;*/
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 10rem;
+  padding: 1.5rem;
+}
+
+.right-col {
+  background-color: #dee2e6;
+  width: 50vw;
+ /* height: 100vh;*/
+  padding: 2rem 3.5rem;
+}
+
+h1, label, button, .description {
+  font-family:  sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+
+h1 {
+  color:var(--h1-color);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  width: 40vw;
+  margin: 0.25rem 0;
+}
+
+label, .description {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 0.625rem;
+}
+
+form {
+  width: 31.25rem;
+  position: relative;
+  margin-top: -1rem;
+  padding: 1rem 0;
+}
+
+input, textarea, label {
+  width: 40vw;
+  display: block;
+}
+
+p, placeholder, input, textarea {
+  font-family: sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #1b9ce3;
+  font-weight: bold;
+  font-size: 16px
+}
+
+input, textarea {
+  color: var(--primary-color);
+  font-weight: 500;
+  background: #dee2e6;
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+ /* padding: 0.5rem 0;
+  margin-bottom: 1rem;*/
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: 300;
+  background-color: #6c757d;
+  color: var(--bg-color);
+  width: 10rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 15px
+}
+
+input:hover, textarea:hover, button:hover {
+  opacity: 0.5;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+/* Toggle Switch */
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 160px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+}
+
+.description {
+    margin-left: 1.25rem;
+  }
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 0.25rem;
+  content: "";
+  width: 26px;
+  height: 26px;
+  left: 0.25rem;
+  position: absolute;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--button-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#error, #success-msg {
+  width: 40vw;
+  margin: 0.125rem 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: var(--secondary-color);
+  }
+}
+
+  #success-msg {
+  transition-delay: 3s;
+  }
+
+@media only screen and (max-width: 950px) {
+  .logo {
+    width: 8rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  input, textarea, button {
+    font-size: 0.65rem;
+  }
+  .description {
+    font-size: 0.3rem;
+    margin-left: 0.4rem;
+  }
+  button {
+    width: 7rem;
+  }
+  .theme-switch-wrapper {
+    width: 120px;
+  }
+  .theme-switch {
+  height: 28px;
+  width: 50px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 0.25rem;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 0.25rem;
+  position: absolute;
+  transition: .4s;
+}
+  input:checked + .slider:before {
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 15px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+}
+
+</style>
+<body>
+
+<div class="bg-top navbar-light">
+<div class="container">
+<div class="row no-gutters d-flex align-items-center align-items-stretch">
+<div class="col-md-4 d-flex align-items-center py-4">
+<a class="navbar-brand" href="index.html"><img src="images/Arudra-logo.png" style="width: 235px; height: 70px; margin-top: 12px"></a>
+</div>
+<div class="col-lg-8 d-block">
+<div class="row  mt-lg-5 float-right" >
+<div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+<div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+<div class="text" style="font-size: 18px">
+<span>Email</span>
+<span><a href="mailto:info@arudra.com" class="__cf_email__" data-cfemail="aad3c5dfd8cfc7cbc3c6eacfc7cbc3c684c9c5c7">Info@arudra.com
+
+</a></span>
+</div>
+</div>
+<div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+<div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+<div class="text"style="font-size: 18px" >
+<span>Call</span>
+<span><a href=""> 9100039800</a></span>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<section>
+	<div class="contact-container">
+  <div class="left-col">
+<!--     <img class="logo" src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png"/>
+ -->  </div>
+  <div class="right-col">
+    
+    
+    <h1>Contact us</h1>
+    
+    
+    <form id="contact-form" action="comingsoon.php" method="post">
+
+      <label for="name"  style="color: #2b5891; font-weight: bold; font-size: 11px"> Full name</label>
+  <input type="text" id="name" name="name" placeholder=" Your Full Name " required>
+
+      <label for="email" style="color: #2b5891; font-weight: bold; font-size: 11px"> Email Address</label>
+  <input type="email" id="email" name="email" placeholder=" Your Email Address " required>
+
+  	  <label for="number" style="color: #2b5891; font-weight: bold; font-size: 11px"> Mobile number</label>
+  	  <input type="number" name="number" id="email" placeholder=" Your Mobile Number ">
+
+      <label for="message" style="color: #2b5891; font-weight: bold; font-size: 11px"> Message</label>
+  <textarea rows="5" placeholder=" Your Message " id="message" name="message" required></textarea>
+<!--       <a href="javascript:void(0)"> --><button type="submit" id="submit" name="submit" onclick="redirect();">Send</button><!-- </a> -->
+  
+</form>
+
+
+<div id="error"></div>
+<div id="success-msg"></div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&amp;sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="../../../static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"si":10,"rayId":"6325b7c23cf53983","version":"2021.2.0"}'></script>
+
+ <!--  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    	offset: 120,
+    	delay: 1000,
+
+    });
+  </script> -->
+</body>
+</html>
